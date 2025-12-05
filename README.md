@@ -2,6 +2,12 @@
 
 A VS Code/Cursor extension that provides a fuzzy-searchable quick picker for running [Just](https://github.com/casey/just) recipes with persistent terminal support.
 
+
+https://github.com/user-attachments/assets/a14ed76a-2ee7-433d-a5bc-b0b03e77c807
+
+
+
+
 ## Features
 
 - 🔍 **Fuzzy search** through all available Just recipes
