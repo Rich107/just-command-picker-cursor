@@ -1,0 +1,56 @@
+{
+  "name": "just-runner",
+  "displayName": "Just Runner",
+  "description": "Run Just commands with fuzzy search and persistent terminals",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "just",
+    "justfile",
+    "task runner",
+    "build tool",
+    "command runner"
+  ],
+  "activationEvents": [
+    "onCommand:just-runner.pickRecipe"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "just-runner.pickRecipe",
+        "title": "Just: Run Recipe"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "just-runner.pickRecipe",
+        "key": "ctrl+shift+j",
+        "mac": "cmd+shift+j"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
