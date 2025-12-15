@@ -38,6 +38,12 @@ When you run the same recipe again, it will reuse the existing terminal window i
 - npm or yarn
 - VS Code or Cursor
 
+### Install:
+1. Download the .vsix file for the extension
+2. Open the Command Palette (Ctrl+Shift+P / Cmd+Shift+P)
+3. Type "Install from VSIX" and select it
+4. Browse to and select the .vsix file
+
 ### Local Development Steps
 
 1. **Clone and setup:**
